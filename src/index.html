@@ -8,7 +8,7 @@
    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <div class="bg-cover bg-no-repeat  min-h-[80vh] bg-red-400 grid place-items-center" style="background-image: url(../0034ef88-152e-42cd-ada8-2a9d87886564.jfif); background-position: center center;">
+  <div class="bg-cover bg-no-repeat  min-h-[80vh] bg-red-400 grid place-items-center" style="background-image: url(0034ef88-152e-42cd-ada8-2a9d87886564.jfif); background-position: center center;">
     <header class="container mx-auto flex justify-around items-center pt-3 fixed top-0 ">
         <div class="logo">
             <h1 class="font-extrabold italic text-2xl lg:text-3xl">Alx Prog</h1>
@@ -55,13 +55,13 @@
             <div
               class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200">
             </div>
-            <div href="./updated Cv Uche (2).docx" target="_blank" title="" role="button" class="relative inline-flex items-center justify-center px-8 py-3 text-base font-bold text-white transition-all duration-200 bg-gray-900 border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-600 rounded">
+            <div id="cv" target="_blank" title="" role="button" class="relative inline-flex items-center justify-center px-8 py-3 text-base font-bold text-white transition-all duration-200 bg-gray-900 border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-gray-600 rounded">
               Download CV
             </div>
           </div>
         </div>        
         <div class="overflow-hidden sm:w-3/4">
-          <img class=" w-full h-2/3 object-cover " src="../0034ef88-152e-42cd-ada8-2a9d87886564.jfif" alt="profile">
+          <img class=" w-full h-2/3 object-cover " src="./0034ef88-152e-42cd-ada8-2a9d87886564.jfif" alt="profile">
         </div>        
       </div>
     </section>
@@ -115,7 +115,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
               <!-- Project Card -->
               <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                  <img src="../2.jpg" alt="Project Image" class="w-full h-64 object-cover">
+                  <img src="./2.jpg" alt="Project Image" class="w-full h-64 object-cover">
                   <div class="p-6">
                       <h3 class="text-2xl font-bold mb-4">Instagram clone</h3>
                       <p class="text-gray-700">The goal of the project was to replicate the core functionalities of Instagram, including user authentication, posting photos, liking posts, and viewing a feed of posts. 🐱</p>
@@ -124,7 +124,7 @@
               </div>
               
               <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                  <img src="../3.avif" alt="Project Image" class="w-full h-64 object-cover">
+                  <img src="./3.avif" alt="Project Image" class="w-full h-64 object-cover">
                   <div class="p-6">
                       <h3 class="text-2xl font-bold mb-4">Music site</h3>
                       <p class="text-gray-700">Creating a music site using Svelte and SvelteKit was an exciting project that leveraged modern web development technologies to build a responsive and dynamic web application. 🐱</p>
@@ -132,7 +132,7 @@
                   </div>
               </div>
               <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                  <img src="../hq720.webp" alt="Project Image" class="w-full h-64 object-cover">
+                  <img src="./hq720.webp" alt="Project Image" class="w-full h-64 object-cover">
                   <div class="p-6">
                       <h3 class="text-2xl font-bold mb-4">Movie-site</h3>
                       <p class="text-gray-700">this site brings you the latest in cinema. From trending films to personalized recommendations, we have everything a movie lover needs.</p>
@@ -218,6 +218,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/fontawesome.min.js"></script>
   <script>
     let btn= document.getElementById("btn")
+    let Cv= document.getElementById("cv")
       document.querySelector('nav a').addEventListener('click', function(e) {
     e.preventDefault();
     document.querySelector(this.getAttribute('href')).scrollIntoView({
@@ -228,6 +229,11 @@
    btn.addEventListener("click", (()=>{
     window.location.href="https://rad-kataifi-45fd78.netlify.app/"
    }))
+   Cv.addEventListener("click", (()=>{
+    window.location.href="./updated Cv Uche (2).docx"
+   }))
+
+   
    
   </script>
 </body>
