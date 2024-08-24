@@ -7,3 +7,18 @@ li{
 li a:hover{
    color: red; 
 }
+
+.amp{
+  padding: 31px;
+  text-align: center;
+  background-color: black;
+  color: white;
+
+}
+.nam{
+  position: absolute;
+  height: 54vh;
+    top: 44px;
+    left: 0;
+    right: 0;
+}
